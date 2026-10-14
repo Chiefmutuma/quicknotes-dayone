@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuickNotes</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 600px; margin: 40px auto; padding: 0 16px; }
+    header { text-align: center; margin-bottom: 24px; }
+    nav a { margin: 0 10px; }
+    h1 { margin-bottom: 4px; }
+    .note-form { display: flex; flex-direction: column; gap: 8px; margin-bottom: 24px; }
+    input, textarea { padding: 8px; font-size: 16px; }
+    button { padding: 8px; font-size: 16px; cursor: pointer; }
+    .note { border: 1px solid #ccc; border-radius: 6px; padding: 12px; margin-bottom: 12px; }
+    .note h3 { margin: 0 0 6px; }
+    .note p { margin: 0 0 8px; white-space: pre-wrap; }
+    footer { text-align: center; margin-top: 32px; font-size: 14px; color: #555; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>QuickNotes</h1>
+    <p>Capture your thoughts in seconds.</p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <form id="note-form" class="note-form">
+      <input type="text" id="note-title" placeholder="Note title" required>
+      <textarea id="note-body" rows="4" placeholder="Write your note..."></textarea>
+      <button type="submit">Save Note</button>
+    </form>
+
+    <div id="notes-list"></div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 QuickNotes</p>
+  </footer>
+
+  <script>
+    // STATE: all notes are stored in this array while the page is open
+    let notes = [];
+
+    // TODO 1: Add a new note to the notes array
+    // Hint: build an object with an id, title, and body, then use notes.push()
+    function addNote(title, body) {
+      // TODO: your code here
+    }
+
+    // TODO 2: Remove a note from the notes array using its id
+    // Hint: notes.filter() can keep every note except the one you want to delete
+    function deleteNote(id) {
+      // TODO: your code here
+    }
+
+    // TODO 3: Draw all notes on the screen
+    // Hint: clear the notes-list div, loop through notes, and build HTML for each one
+    function renderNotes() {
+      // TODO: your code here
+    }
+
+    // TODO 4: Connect the form to addNote when the Save button is pressed
+    // Hint: read the input values, call addNote, clear the form, then call renderNotes
+    document.getElementById("note-form").addEventListener("submit", function (event) {
+      event.preventDefault(); // stops the page from reloading when the form is submitted
+      // TODO: your code here
+    });
+
+    renderNotes(); // draws the list when the page first loads
+  </script>
+</body>
+</html>

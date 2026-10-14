@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About QuickNotes</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 600px; margin: 40px auto; padding: 0 16px; }
+    header { text-align: center; margin-bottom: 24px; }
+    nav a { margin: 0 10px; }
+    h1 { margin-bottom: 4px; }
+    section { margin-bottom: 28px; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+    .feedback-form div { display: flex; flex-direction: column; gap: 4px; margin-bottom: 12px; }
+    input, textarea { padding: 8px; font-size: 16px; }
+    button { padding: 8px 16px; font-size: 16px; cursor: pointer; }
+    footer { text-align: center; margin-top: 32px; font-size: 14px; color: #555; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>QuickNotes</h1>
+    <p>Capture your thoughts in seconds.</p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>About QuickNotes</h2>
+    <p>QuickNotes is a simple web app for jotting down ideas, reminders, and to-do items. It is designed for quick capture, so you can write a note in seconds without creating an account or learning complicated tools.</p>
+
+    <section>
+      <h2>How to use QuickNotes</h2>
+      <ol>
+        <li>Open the Home page in your web browser.</li>
+        <li>Type a title for your note in the "Note title" box.</li>
+        <li>Write the details of your note in the large text box below it.</li>
+        <li>Press the "Save Note" button to add the note to your list.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Features</h2>
+      <ul>
+        <li>Save notes with a title and body text</li>
+        <li>View all of your notes in one list</li>
+        <li>Delete notes you no longer need</li>
+        <li>Works in any modern web browser</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Keyboard shortcuts</h2>
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Shortcut</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Ctrl + Enter</td>
+            <td>Save the current note</td>
+          </tr>
+          <tr>
+            <td>Esc</td>
+            <td>Clear the note form</td>
+          </tr>
+          <tr>
+            <td>Ctrl + Delete</td>
+            <td>Delete the selected note</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Send feedback</h2>
+      <form class="feedback-form" action="#" method="post">
+        <div>
+          <label for="feedback-name">Name</label>
+          <input type="text" id="feedback-name" name="name" required>
+        </div>
+        <div>
+          <label for="feedback-email">Email</label>
+          <input type="email" id="feedback-email" name="email" required>
+        </div>
+        <div>
+          <label for="feedback-message">Message</label>
+          <textarea id="feedback-message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit">Submit feedback</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 QuickNotes</p>
+  </footer>
+</body>
+</html>
